@@ -96,7 +96,7 @@ void AdbConnectionDebuggerController::StartDebugger() {
   if (IsDebuggingPossible()) {
     connection_->StartDebuggerThreads();
   } else {
-    LOG(ERROR) << "Not starting debugger since process cannot load the jdwp agent.";
+    LOG(VERBOSE) << "Not starting debugger since process cannot load the jdwp agent.";
   }
 }
 
